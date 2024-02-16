@@ -50,13 +50,14 @@ RaceList["Shroudeye Kenku"] = {
   skills: [],
   scores: [0, 2, 0, 0, 1, 0],
   trait: "Ability Score Increase. Your Dexterity score increases by 2, and your Wisdom score increases by 1.\nMimicry. You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.\nLanguages. You can read and write Common and Auran, but you can speak only by using your Mimicry trait.\nOracle. You are proficient in the Arcana and Religion skills.\nEye of Omens. You know the guidance cantrip. Once you reach 3rd level, you can cast the animal messenger spell on a bird once with this trait as a 2nd-level spell. Once you reach 5th level, you can cast the augury spell once with this trait as a 2nd-level spell, and you regain the ability to cast these spells this way when you finish a long rest. Wisdom is your spellcasting ability for these spells.\nBird's Eye View. Through sounds and gestures, you can communicate simple ideas with Small or smaller birds. In addition, when you are within 25 feet of a non-hostile Small or smaller bird you can see, you may use your action to point at it and see through that bird's vision, blinded to your own. The effect ends if the bird flies more than 50 feet away from you, and you may end the effect by using your bonus action."
+};
 
 // Snatchbeak Kenku Subrace
 RaceList["Snatchbeak Kenku"] = {
   regExpSearch: /^(?=.*snatchbeak)(?=.*kenku).*$/i,
   name: "Snatchbeak Kenku",
   sortname: "Kenku, Snatchbeak",
-  source: [["Custom", "Your Source"]],
+  source: [["VO", "20"]],
   plural: "Snatchbeak Kenku",
   size: 4,
   speed: {
