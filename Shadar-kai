@@ -1,0 +1,46 @@
+/*	-WHAT IS THIS?-
+	This file adds optional material to "MPMB's Character Record Sheet" found at https://flapkan.com/mpmb/charsheets
+	Import this file using the "Add Extra Materials" bookmark.
+
+	-KEEP IN MIND-
+	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
+*/
+
+/*	-INFORMATION-
+	Subject:	Races
+	Effect:		This script adds the 
+                    This is taken from Player's Companion
+                    by M.T. Black, Jeremy Forbing, Benjamin Huffman, Chris Bissette, Patrick E. Pullen, Rodney Sloan, Scott Bean (https://www.dmsguild.com/product/229989/Players-Companion)
+	Code by:	DruidAllanon42
+	Scheduled meeting:		2024-02-08 (v13.1.12)
+
+var iFileName = "Shadar-kai.js";
+RequiredSheetVersion(13);
+
+Racelist["shadar-kai"] = {
+    regExpSearch: /^(?=.*shadar)(?=.*kai).*$/i,
+    name: "Shadar-kai",
+    source: ["PC", 22],
+    plural: "Shadar-kai",
+    size: 3,
+    speed: {
+        walk: { spd: 30, enc: 20 }
+    },
+    languageProfs: ["Common", "Elvish"],
+    vision: [["Darkvision", 120]],
+    abilitySave: 1,
+    skillstxt: "Choose any two skills",
+    scores: [0, 2, 0, 1, 0, 0],
+    age: " reach adulthood by their mid-teens and can live indefinitely",
+    alignment: "Almost always chaotic. Depraved shadar-kai are likely to be evil, while shadar-kai who find purpose in altruism and in defending the weak are likely to be good.",
+    trait: "Shadar-kai (+2 Dexterity, +1 Intelligence)\nSuperior Darkvision: Can see in dim light within 120 feet as if it were bright light, and in darkness as if it were dim light. Can't discern color in darkness, only shades of gray.\nCloak of Shadows: Advantage on Stealth checks in dim light or darkness.\nShadow Jaunt: As a bonus action, can teleport 30 feet after turning into a shadowy form. Usable again after finishing a short or long rest.\nLanguages: Common, Elvish, and one other language of your choice. Speaking above a whisper strains their voice.",
+    features: {
+        "shadow jaunt": {
+            name: "Shadow Jaunt",
+            usages: 1,
+            minlevel: 1,
+            recovery: "short rest",
+            action: ["bonus action", ""]
+        }
+    }
+};
