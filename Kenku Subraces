@@ -1,0 +1,69 @@
+/*	-WHAT IS THIS?-
+	This file adds optional material to "MPMB's Character Record Sheet" found at https://flapkan.com/mpmb/charsheets
+	Import this file using the "Add Extra Materials" bookmark.
+
+	-KEEP IN MIND-
+	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
+*/
+
+/*	-INFORMATION-
+	Subject:	Races
+	Effect:		This script adds 3 Kenku subraces: Harrowfeather Kenku, Shroudeye Kenku, and Snatchbeak Kenku
+                    This is taken from Volo's Complete Subrace Handbook
+                    by Clan Crafter Hralding (https://www.dmsguild.com/product/230470/Volos-Complete-Subrace-Handbook-Over-50-Subraces)
+	Code by:	DruidAllanon42
+	Date:		2024-02-15 (v13.1.12)
+*/
+
+var iFileName = "Kenku 3 subraces.js";
+RequiredSheetVersion(13);
+
+// Harrowfeather Kenku Subrace
+RaceList["Harrowfeather Kenku"] = {
+  regExpSearch: /^(?=.*harrowfeather)(?=.*kenku).*$/i,
+  name: "Harrowfeather Kenku",
+  sortname: "Kenku, Harrowfeather",
+  source: [["VO", "19"]],
+  plural: "Harrowfeather Kenku",
+  size: 4,
+  speed: {
+    walk: { spd: 30, enc: 10 },
+  },
+  languageProfs: ["Common", "Auran"],
+  skills: [],
+  scores: [0, 2, 0, 0, 1, 0],
+  trait: "Ability Score Increase. Your Dexterity score increases by 2, and your Wisdom score increases by 1.\nPlague Doctor. You are proficient in the History and Medicine skills. You also have advantage on saving throws against diseases.\nReaper of the Crop. You are proficient with sickles. You may also use sickles as a spellcasting focus for any class that uses one.\nFinal Words. Once per day, you can use an action to touch a corpse that is not undead and speak the last sentence they spoke in a perfect imitation.\nMarked for Death. Once per long rest, when you are within 15 feet of a creature that is below half its maximum hit points, you may use your bonus action to mark it for death, surrounding it with an aura of dark energy. Any healing the creature receives from spells or magical effects is reduced by half for 1 minute or until you and the creature are separated by more than 30 feet. Constructs are unaffected by this trait.\nMimicry. You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.\nLanguages. You can read and write Common and Auran, but you can speak only by using your Mimicry trait."
+};
+
+// Shroudeye Kenku Subrace
+RaceList["Shroudeye Kenku"] = {
+  regExpSearch: /^(?=.*shroudeye)(?=.*kenku).*$/i,
+  name: "Shroudeye Kenku",
+  sortname: "Kenku, Shroudeye",
+  source: [["Custom", "Your Source"]],
+  plural: "Shroudeye Kenku",
+  size: 4,
+  speed: {
+    walk: { spd: 30, enc: 10 },
+  },
+  languageProfs: ["Common", "Auran"],
+  skills: [],
+  scores: [0, 2, 0, 0, 1, 0],
+  trait: "Ability Score Increase. Your Dexterity score increases by 2, and your Wisdom score increases by 1.\nMimicry. You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.\nLanguages. You can read and write Common and Auran, but you can speak only by using your Mimicry trait.\nOracle. You are proficient in the Arcana and Religion skills.\nEye of Omens. You know the guidance cantrip. Once you reach 3rd level, you can cast the animal messenger spell on a bird once with this trait as a 2nd-level spell. Once you reach 5th level, you can cast the augury spell once with this trait as a 2nd-level spell, and you regain the ability to cast these spells this way when you finish a long rest. Wisdom is your spellcasting ability for these spells.\nBird's Eye View. Through sounds and gestures, you can communicate simple ideas with Small or smaller birds. In addition, when you are within 25 feet of a non-hostile Small or smaller bird you can see, you may use your action to point at it and see through that bird's vision, blinded to your own. The effect ends if the bird flies more than 50 feet away from you, and you may end the effect by using your bonus action."
+
+// Snatchbeak Kenku Subrace
+RaceList["Snatchbeak Kenku"] = {
+  regExpSearch: /^(?=.*snatchbeak)(?=.*kenku).*$/i,
+  name: "Snatchbeak Kenku",
+  sortname: "Kenku, Snatchbeak",
+  source: [["Custom", "Your Source"]],
+  plural: "Snatchbeak Kenku",
+  size: 4,
+  speed: {
+    walk: { spd: 30, enc: 10 },
+  },
+  languageProfs: ["Common", "Auran"],
+  skills: [],
+  scores: [0, 2, 0, 0, 1, 0],
+  trait: "Kenku Training: You are proficient in your choice of two of the following skills: Acrobatics, Deception, Stealth, and Sleight of Hand.\nMimicry. You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.\nLanguages. You can read and write Common and Auran, but you can speak only by using your Mimicry trait.\nExpert Forgery: You can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects.\nSnatchbeak: You may use your beak to make Dexterity (Sleight of Hand) checks.\nDark Feathers: You can take the Hide action as a bonus action whenever you are in dim light or darkness."
+};
