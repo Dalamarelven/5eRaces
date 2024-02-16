@@ -17,7 +17,7 @@
 var iFileName = "Shadar-kai.js";
 RequiredSheetVersion(13);
 
-Racelist["shadar-kai"] = {
+RaceList["shadar-kai"] = {
     regExpSearch: /^(?=.*shadar)(?=.*kai).*$/i,
     name: "Shadar-kai",
     source: ["PC", 22],
